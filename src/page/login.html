@@ -7,7 +7,7 @@
     <link href="../output.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/flowbite@3.1.2/dist/flowbite.min.css" rel="stylesheet" />
     <link rel="shortcut icon" href="../../img/jomnum_lg.jpg" type="image/x-icon">
-    <title>Block</title>
+    <title>Login</title>
 </head>
 
 <body>
@@ -44,8 +44,7 @@
                         </li>
                         <li>
                             <a href="./block.html"
-                                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
-                                aria-current="page">Block</a>
+                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Block</a>
                         </li>
                         <li>
                             <a href="./about.html"
@@ -53,7 +52,8 @@
                         </li>
                         <li>
                             <a href="./login.html"
-                                class="block py-2 px-3 text-gray-900 rounded-sm hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-blue-700 md:p-0 dark:text-white md:dark:hover:text-blue-500 dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent">Login</a>
+                                class="block py-2 px-3 text-white bg-blue-700 rounded-sm md:bg-transparent md:text-blue-700 md:p-0 dark:text-white md:dark:text-blue-500"
+                                aria-current="page">Login</a>
                         </li>
                     </ul>
                 </div>
@@ -65,124 +65,69 @@
 
 
     <!-- main start -->
-    <main class="container mx-auto mt-14 px-6">
+    <main class="container mx-auto px-6">
 
-        <!-- section cards -->
-        <section class="w-full flex flex-wrap justify-center items-center gap-10">
-
-            <!-- Generative ai Card -->
-            <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 w-3xl ">
-                <div class="flex justify-center w-[40%]">
-                    <img class="object-cover rounded-md w-[190px]" src="../../img/ai.jpg" alt="">
-                </div>
-                <div class="flex flex-col justify-between p-4 leading-normal w-[60%]">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Generative AI</h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
-                        This technology allows AI systems to create new content, such as text, images, and even code, opening up possibilities in various creative and technical fields. 
-                    </p>
-                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:ring-sky-200 font-medium rounded-lg text-sm px-5 py-2.5 w-30 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-sky-200">Read more</button>
+        <!-- Start of Login section  -->
+        <section class="bg-white dark:bg-white w-[50%]b mx-auto">
+            <div class="flex flex-col items-center justify-center px-6 py-8 mx-auto md:h-screen lg:py-0">
+                <a href="#"
+                    class="flex items-center mb-6 text-2xl font-bold text-gray-900 dark:text-black mt-7 bg-white">
+                    <img class="w-30 mr-2" src="../../img/jomnum_lg.png" alt="logo">
+                    <h1 class="mt-5">JomNum Tech</h1>
+                </a>
+                <div
+                    class="w-full bg-white rounded-lg shadow dark:border md:mt-0 sm:max-w-md xl:p-0 dark:bg-gray-700 dark:border-gray-700">
+                    <div class="p-6 space-y-4 md:space-y-6 sm:p-8">
+                        <h1
+                            class="text-xl font-bold leading-tight tracking-tight text-gray-900 md:text-2xl dark:text-white">
+                            Sign in to your account
+                        </h1>
+                        <form class="space-y-4 md:space-y-6" action="#">
+                            <div>
+                                <label for="email"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Your
+                                    email</label>
+                                <input type="email" name="email" id="email"
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-gray-600 focus:border-gray-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    placeholder="name@gmail.com" required="">
+                            </div>
+                            <div>
+                                <label for="password"
+                                    class="block mb-2 text-sm font-medium text-gray-900 dark:text-white">Password</label>
+                                <input type="password" name="password" id="password" placeholder="••••••••" value=""
+                                    class="bg-gray-50 border border-gray-300 text-gray-900 rounded-lg focus:ring-gray-600 focus:border-gray-600 block w-full p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+                                    required="">
+                            </div>
+                            <div class="flex items-center justify-between">
+                                <div class="flex items-start">
+                                    <div class="flex items-center h-5">
+                                        <input id="remember" aria-describedby="remember" type="checkbox"
+                                            class="w-4 h-4 border border-gray-300 rounded bg-gray-50 focus:ring-3 focus:ring-primary-300 dark:bg-gray-700 dark:border-gray-600 dark:focus:ring-primary-600 dark:ring-offset-gray-800"
+                                            required="">
+                                    </div>
+                                    <div class="ml-3 text-sm">
+                                        <label for="remember"
+                                            class="text-gray-500 dark:text-gray-300 font-bold">Remember me</label>
+                                    </div>
+                                </div>
+                                <a href="#"
+                                    class="text-sm text-blue-600 hover:underline dark:text-blue-400 font-bold">Forgot
+                                    password?</a>
+                            </div>
+                            <button type="submit"
+                                class="w-full text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center dark:bg-blue-600 dark:hover:bg-blue-300 dark:focus:ring-gray-00">Sign
+                                in</button>
+                            <p class="text-sm font-light text-gray-200 dark:text-gray-400">
+                                Don’t have an account yet? <a href="#"
+                                    class="font-medium text-gray-600 hover:underline dark:text-gray-300 ml-3">Sign
+                                    up</a>
+                            </p>
+                        </form>
+                    </div>
                 </div>
             </div>
-
-            <!-- API Card  -->
-            <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 w-3xl">
-                <div class="flex justify-center w-[40%]">
-                    <img class="object-cover rounded-md w-[190px]" src="../../img/api.jpg" alt="">
-                </div>
-                <div class="flex flex-col justify-between p-4 leading-normal w-[60%]">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">API with security in 2025</h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">
-                        In 2025, API security will see a significant evolution driven by the increased reliance on APIs and the growing sophistication of threats. 
-                     </p>
-                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:ring-sky-200 font-medium rounded-lg text-sm px-5 py-2.5 w-30 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-sky-200">Read more</button>
-                </div>
-            </div>
-
-            <!-- blockchain card  -->
-            <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 w-3xl">
-                <div class="flex justify-center w-[40%]">
-                    <img class="object-cover rounded-md w-[190px]" src="../../img/blockchain.jpg" alt="">
-                </div>
-                <div class="flex flex-col justify-between p-4 leading-normal w-[60%]">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Blockchain & Web3</h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">Blockchain and Web3 represent the next stage of the internet, focusing on decentralization, user control, and innovative applications built on distributed</p>
-                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:ring-sky-200 font-medium rounded-lg text-sm px-5 py-2.5 w-30 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-sky-200">Read more</button>
-                </div>
-            </div>
-             
-            <!-- Advanced Robotics & Automation  -->
-            <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 w-3xl">
-                <div class="flex justify-center w-[40%]">
-                    <img class="object-cover rounded-md w-[190px]" src="../../img/av.jpg" alt="">
-                </div>
-                <div class="flex flex-col justify-between p-4 leading-normal w-[60%]">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Advanced Robotics</h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">Advanced Robotics and Automation involve using robots and automated systems to perform tasks with greater efficiency, accuracy, </p>
-                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:ring-sky-200 font-medium rounded-lg text-sm px-5 py-2.5 w-30 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-sky-200">Read more</button>
-                </div>
-            </div>
-
-            <!-- Cybersecurity card  -->
-            <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 w-3xl">
-                <div class="flex justify-center w-[40%]">
-                    <img class="object-cover rounded-md w-[190px]" src="../../img/cybersecurity.jpg" alt="">
-                </div>
-                <div class="flex flex-col justify-between p-4 leading-normal w-[60%]">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Cybersecurity</h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">Disinformation security and AI-powered cybersecurity will become crucial for protecting digital information. AI will be used to detect and mitigate cyber threats, </p>
-                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:ring-sky-200 font-medium rounded-lg text-sm px-5 py-2.5 w-30 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-sky-200">Read more</button>
-                </div>
-            </div>
-
-            <!-- Internet of things  -->
-            <div class="flex flex-col items-center bg-white border border-gray-200 rounded-lg shadow-sm md:flex-row md:max-w-xl dark:border-gray-700 dark:bg-gray-800 w-3xl">
-                <div class="flex justify-center w-[40%]">
-                    <img class="object-cover rounded-md w-[190px]" src="../../img/iot.jpg" alt="">
-                </div>
-                <div class="flex flex-col justify-between p-4 leading-normal w-[60%]">
-                    <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white">Internet of things</h5>
-                    <p class="mb-3 font-normal text-gray-700 dark:text-gray-400 line-clamp-3">Internet of things describes devices with sensors, processing ability, software and other technologies that connect and exchange data with </p>
-                    <button type="button" class="text-white bg-blue-700 hover:bg-blue-800 focus:ring-2 focus:ring-sky-200 font-medium rounded-lg text-sm px-5 py-2.5 w-30 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 focus:outline-none dark:focus:ring-sky-200">Read more</button>
-                </div>
-            </div>
-
         </section>
-
-        <!-- section pagination -->
-        <section class="mt-12 w-full flex justify-center items-center">
-            <nav aria-label="Page navigation example">
-                <ul class="inline-flex -space-x-px text-base h-10">
-                    <li>
-                        <a href="#"
-                            class="flex items-center justify-center px-4 h-10 ms-0 leading-tight text-gray-500 bg-white border border-e-0 border-gray-300 rounded-s-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Previous</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">1</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">2</a>
-                    </li>
-                    <li>
-                        <a href="#" aria-current="page"
-                            class="flex items-center justify-center px-4 h-10 text-blue-600 border border-gray-300 bg-blue-50 hover:bg-blue-100 hover:text-blue-700 dark:border-gray-700 dark:bg-gray-700 dark:text-white">3</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">4</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">5</a>
-                    </li>
-                    <li>
-                        <a href="#"
-                            class="flex items-center justify-center px-4 h-10 leading-tight text-gray-500 bg-white border border-gray-300 rounded-e-lg hover:bg-gray-100 hover:text-gray-700 dark:bg-gray-800 dark:border-gray-700 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-white">Next</a>
-                    </li>
-                </ul>
-            </nav>
-        </section>
+        <!-- End of Login section  -->
 
     </main>
     <!-- main end -->
